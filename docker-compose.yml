@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  ruby2exe:
+    build: .
+    image: mattipaksula/ruby2exe
+    volumes:
+      - build:/tmp/build
+
+volumes:
+  build:
